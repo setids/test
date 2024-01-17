@@ -4,48 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- CSS -->
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <form action="" method="post" class="my-form">
         <div class="login-welcome-row">
-          <!-- <img src="react.svg" alt="Logo" class="login-welcome" /> -->
+          <img src="react.svg" alt="Logo" class="login-welcome" />
           <h2>Login</h2>
         </div>
         <div class="text-field">
-          <label for="username">Username</label>
           <input
             type="text"
             name="username"
+            class="inputUsername"
             id="username"
-            placeholder="Your username"
             autocomplete="off"
             maxlength="23"
             required
           />
-          <img src="username.svg" alt="Username Icon" />
+          <label for="username" class="label">Username</label>
+          <img src="user.svg" alt="Username Icon" />
         </div>
         <div class="text-field">
-          <label for="password">Password</label>
           <input
             type="password"
             name="password"
-            id="password"
-            placeholder="Your password"
-            autocomplete="off"
             class="inputPassword"
+            id="password"
+            autocomplete="off"
             maxlength="23"
             required
           />
-          <img src="eyes.svg" class="inputIcon" alt="Password Icon" />
+          <label for="password" class="label">Password</label>
+          <img src="eye.svg" class="inputIcon" alt="Password Icon" />
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="check" /> Show Password
         </div>
         <button type="submit" class="btnLogin">Login</button>
       </form>
     </div>
-    <script src="login.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
