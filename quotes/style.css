@@ -1,3 +1,13 @@
+a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: inherit;
+}
+
+#screenshoot {
+  cursor: pointer;
+}
+
 #result {
   display: flex;
   flex-direction: column;
@@ -21,6 +31,11 @@
   display: none;
 }
 
-a {
-  font-size: 1.5em;
+.coba {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  text-decoration: none;
 }
