@@ -22,6 +22,7 @@ async function generateIdea() {
 
     html2canvas(result).then((callback) => {
       screenshoot.setAttribute("href", callback.toDataURL("image/png"));
+      screenshoot.setAttribute("download", "quotes.png");
       count = 1;
     });
 
